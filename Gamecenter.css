@@ -1,0 +1,69 @@
+body,html,p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-scrollbar: none; /* Chrome */
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+
+p{
+    color: white;
+
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: center;
+    color:rgb(28, 28, 28);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.logo{
+    display: flex;
+    width: 300px;
+
+}
+
+hr{
+    top: 240px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* Body */ 
+
+.attraction{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    width: 20%;
+    text-align: center;
+    z-index: 999;
+    margin-left: 720px;
+}
+
+.descri-attraction{
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 1200px;
+    text-align: center;
+    z-index: 999;
+    height: 900px;
+    align-items: center;
+    margin-left: 300px;
+    border-radius: 5vh;
+    font-size: 36px;
+}

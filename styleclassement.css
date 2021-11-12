@@ -1,0 +1,228 @@
+body,html,p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-scrollbar: none; /* Chrome */
+    font-family: 'Roboto', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: center;
+    color:rgb(28, 28, 28);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.logo{
+    display: flex;
+    width: 300px;
+
+}
+
+hr{
+    top: 250px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+/*Background body */
+
+#background{
+    width: 100%;
+    top: 30%;
+    position: absolute;
+}
+
+
+.titre{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    width: 20%;
+    text-align: center;
+    z-index: 999;
+    margin-left: 720px;
+}
+
+.crown{
+    display: flex;
+    width: 100px;
+    text-align: center;
+    margin-left: 850px;
+    margin-top: 160px;
+    z-index: 9999;
+}
+
+
+/* classement 1 */
+
+.class1{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 700px;
+    text-align: center;
+    z-index: 999;
+    height: 300px;
+    align-items: center;
+    margin-left: 600px;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+}
+
+.joueur1{
+    width: 150px;
+    z-index: 9999;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 50vh;
+}
+
+.Nb1{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 200px;
+    z-index: 9999;
+    font-size: 45px;
+}
+
+/* Classement 2 */
+
+.class2{
+    background-color: rgb(243, 237, 237);
+    display: flex;
+    top: 110%;
+    position: absolute;
+    width: 600px;
+    z-index: 999;
+    height: 300px;
+    align-items: center;
+    margin-left: 250px;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+}
+
+.joueur2{
+    width: 150px;
+    margin-right: 100px;
+    margin-left: 50px;
+    border-radius: 50vh;
+}
+
+.Nb2{
+    position: absolute;
+    font-size: 45px;
+    margin-top: 650px;
+    margin-left: 170px;
+}
+
+/* classement 3*/
+.class3{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    top: 110%;
+    position: absolute;
+    width: 600px;
+    z-index: 999;
+    height: 300px;
+    align-items: center;
+    margin-left: 1100px;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+}
+
+.joueur3{
+    width: 150px;
+    margin-right: 100px;
+    margin-left: 50px;
+    border-radius: 50vh;
+}
+
+.Nb3{
+    position: absolute;
+    font-size: 45px;
+    margin-top: 650px;
+    margin-left: 1040px;
+
+}
+
+/* classement 4 */
+.class4{
+background-color: rgb(247, 247, 247);
+display: flex;
+top: 160%;
+position: absolute;
+width: 600px;
+text-align: center;
+z-index: 999;
+height: 200px;
+align-items: center;
+margin-left: 600px;
+border-radius: 100vh;
+border-style:ridge;
+border-color: black;
+}
+
+.joueur4{
+    width: 100px;
+    margin-left: 70px;
+    margin-right: 100px;
+    border-radius: 50vh;
+}
+
+.Nb4{
+    position: absolute;
+    font-size: 45px;
+    margin-top: 1085px;
+    margin-left: 525px;
+
+}
+
+/* classement 5 */
+.class5{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    top: 200%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 200px;
+    align-items: center;
+    margin-left: 600px;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+}
+.joueur5{
+    width: 100px;
+    margin-left: 70px;
+    margin-right: 100px;
+    border-radius: 50vh;
+}
+
+.Nb5{
+    position: absolute;
+    font-size: 45px;
+    margin-top: 1450px;
+    margin-left: 525px;
+}
