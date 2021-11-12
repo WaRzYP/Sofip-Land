@@ -33,7 +33,7 @@ header{
 }
 
 main{
-    background: url(img/fond/Rectangle\ 58.png);
+    background: url(img/fond/Rectangle58.png);
     background-size: cover;
 }
 
@@ -150,7 +150,7 @@ footer{
 }
 
 .logocard {
-    width: 50px;
+    width: 70px;
 }
 
 @media screen and (max-width:1216px) {
@@ -190,5 +190,8 @@ footer{
    }
    .panneauplanduparc h2 {
     width: 250px;
+}
+footer {
+    font-size: 10px;
 }
 }
