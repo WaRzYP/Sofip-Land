@@ -1,11 +1,14 @@
-body,html {
+html,body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    -webkit-scrollbar: none; /* Chrome */
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+html,body:-webkit-scrollbar{
+    display: none;
 }
 
 a {
@@ -25,63 +28,106 @@ nav {
     font-size: 1.4em;
 }
 
-hr{
-    top: 250px;
-    right: 0;
-    left: 0;
-    position: absolute;
+header{
+    border-bottom: 1px solid black;
+}
+
+main{
+    background: url(img/fond/Rectangle\ 58.png);
+    background-size: cover;
+}
+
+.space{
+height: 100px;
+width: 100%;
 }
 
 .logo {
     width: 300px;
 }
 
-#background {
-    width: 100%;
-    top: 30%;
-    position: absolute;
-}
-
-.panneau1 {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-}
-
-.panneau2 {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    text-align: center;
-}
-
-.logoattractions {
+.logoattractions{
+    background-color:white;
+    border-radius: 20px;
+    width: 80%;
+    border: 10px solid #404040;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.ligne1 {
+.nosattractions{
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.nosattractions h2 {
+    background-color:white;
+    border-radius: 20px;
+    width: 400px;
+    font-size: 3em;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    transition: 1.0s;
+}
+
+
+
+.ligne1,.ligne2,img{
+    width: 250px;
+}
+
+.ligne1,.ligne2{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 15%;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
 }
 
-.ligne1 img {
-    width: 70%;
+.ligne2{
+    margin-bottom: 50px;
 }
 
-.ligne2 {
+.sectionplan{
+    background-color:white;
+    border-radius: 20px;
+    width: 80%;
+    border: 10px solid #404040;
+    margin: auto;
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 60%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
-.ligne2 img {
-    width: 70%;
+.planduparc{
+width: 100%;
+}
+
+.panneauplanduparc{
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.panneauplanduparc h2 {
+    background-color:white;
+    border-radius: 20px;
+    width: 400px;
+    font-size: 3em;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    transition: 1.0s;
 }

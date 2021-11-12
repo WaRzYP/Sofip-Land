@@ -17,55 +17,72 @@
         <nav>
             <ul data-aos="fade-down" data-aos-duration="2000"> <a href="attractions.html">ATTRACTIONS</a></ul>
             <ul data-aos="fade-down" data-aos-duration="2000">RESTAURANTS</ul>
-            <div data-aos="fade-down" data-aos-duration="3000"><a href="index.html"><img class="logo"
-                        src="/img/logo site/logo site.png" alt=""></a></div>
+            <div class="logodusite" data-aos="fade-down" data-aos-duration="3000"><a href="index.html"><img class="logo"
+                        src="img/logo site/logo site.png" alt=""></a></div>
             <ul data-aos="fade-down" data-aos-duration="2000">CLASSEMENT</ul>
             <ul data-aos="fade-down" data-aos-duration="2000">BILLETERIE</ul>
         </nav>
         <!---------------------->
 
-        <hr>
     </header>
 
-    <!--Linear Background-->
-    <div>
-        <img id="background" src="img/fond/Rectangle 58.png" alt="">
-    </div>
-    <!--------------------->
-
     <main>
-        <section>
-
-            <div class="panneau1"><img src="img/svg/panneau1.png" alt=""></div>
-            <div class="panneau2"><img src="img/svg/Rectangle 46.png" alt=""></div>
 
 
-            <div class="panneau2"><img src="img/svg/Rectangle 46.png" alt="">
-                <article class="logoattractions">
+        <div class="space"></div>
+        <!-- Panneau listes des attractions-->
+        <section class="logoattractions">
 
-                    <span class="ligne1">
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo awesome heroes team.png" alt=""></div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo BATTLE KART.png" alt=""></div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo champions league survivor.png" alt="">
-                        </div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo champions league.png" alt=""></div>
-                    </span>
 
-                    <span class="ligne2">
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo contagion VR.png" alt=""></div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo fighter hard team.png" alt=""></div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo super fighter league.png" alt=""></div>
-                        <div><img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo heroes team.png" alt=""></div>
-                    </span>
+            <div class="nosattractions">
+                <h2 id="test">Nos attractions</h2>
+            </div>
+            <div class="ligne1">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo awesome heroes team.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo BATTLE KART.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo champions league survivor.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo champions league.png" alt="">
+            </div>
 
-                </article>
+            <div class="ligne2">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo contagion VR.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo fighter hard team.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo super fighter league.png" alt="">
+                <img src="img/LOGO DES ATTRACTIONS ET TEXTES/logo heroes team.png" alt="">
             </div>
 
 
+        </section>
+        <!----------------------->
+
+        <!---Panneau Plan du Parc-->
+        <section class="sectionplan">
+
+
+            <div class="panneauplanduparc">
+                <h2>Plan du parc</h2>
+            </div>
+            <img class="planduparc" src="img/Plan du parc.png" alt="plan-complet">
+
 
         </section>
-
+        <!----------------------->
     </main>
+
+    <footer>
+        <!-----------------------------------------------------------
+        A FAIRE
+    ---------------------------------------------------------------------->
+    </footer>
+    <script>
+        var angle = 0
+
+        document.getElementById("test").addEventListener("click",
+            function () {
+                angle += 360
+                document.getElementById("test").style.transform = "rotate(" + angle + "deg)"
+            })
+    </script>
 </body>
 
 </html>
