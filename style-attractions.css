@@ -46,6 +46,8 @@ width: 100%;
     width: 300px;
 }
 
+/* Logo Attractions */
+
 .logoattractions{
     background-color:white;
     border-radius: 20px;
@@ -57,6 +59,7 @@ width: 100%;
     justify-content: center;
     flex-direction: column;
 }
+
 
 .nosattractions{
     text-align: center;
@@ -96,6 +99,8 @@ width: 100%;
     margin-bottom: 50px;
 }
 
+/* Plan du parc */
+ 
 .sectionplan{
     background-color:white;
     border-radius: 20px;
@@ -132,6 +137,8 @@ width: 100%;
     -moz-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
 }
 
+/* Footer */
+
 footer{
     margin-top: 25px;
     border-bottom: solid 1px black;
@@ -153,8 +160,13 @@ footer{
     width: 70px;
 }
 
-@media screen and (max-width:1216px) {
-   nav{
+/* Responsive */
+
+@media screen and (max-width:1336px) {
+  
+    /* Barre de navigation */
+  
+    nav{
        flex-direction: column;
     }
     nav ul{
@@ -170,7 +182,10 @@ footer{
 
    .logo{
     width:100%;
+    
    }
+
+   /* Logo des attractions */
 
    .nosattractions{
        width: 100%;
@@ -182,7 +197,27 @@ footer{
    }
    .ligne1, .ligne2{
        width: auto;
+       padding: 20px;
    }
+
+   /* Logo Ligne 1 */
+
+   .logo1, .logo2, .logo3, .logo4 {
+       padding-top: 25px;
+   }
+
+    /* Logo Ligne 2 */
+
+   .logo5, .logo6, .logo7{
+        padding-top: 25px;
+    }
+
+    .logo8{
+        padding-top: 35px;
+    }
+
+   /* Plan du parc */
+
    .panneauplanduparc{
     width: 100%;
     font-size: 10px;
@@ -191,7 +226,21 @@ footer{
    .panneauplanduparc h2 {
     width: 250px;
 }
+
+/* Footer */
+
 footer {
-    font-size: 10px;
+    font-size: 5px
 }
+
+.logocard {
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+}
+
+.footertext {
+    width: 50px;
+}
+
 }
