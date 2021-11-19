@@ -1,25 +1,17 @@
 body,html,p {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
+    /* overflow-x: hidden; */
+    /* -ms-overflow-style: none;  IE and Edge */
     scrollbar-width: none;  /* Firefox */
     -webkit-scrollbar: none; /* Chrome */
     font-family: 'Roboto', sans-serif; 
 }
 
-.space{
-    height: 100px;
-    width: 100%;
-}
 
 p{
     color: white;
-}
 
-a {
-    text-decoration: none;
-    color: rgb(28, 28, 28);
 }
 
 /* Header */
@@ -43,6 +35,7 @@ nav {
 .logo{
     display: flex;
     width: 300px;
+
 }
 
 /* Body */ 
@@ -59,15 +52,6 @@ main section{
     height: 500px;
 }
 
-.attraction{
-    display: flex;
-    position: absolute;
-    top: 35%;
-    width: 20%;
-    text-align: center;
-    z-index: 999;
-    margin-left: 720px;
-}
 
 .descri-attraction{
     width: 70%;
@@ -94,10 +78,15 @@ main section{
     }
 
     main section{
-        height: 100vh;
+        height: 80vh;
+    }
+
+    .taille-logo{
+        height: 50vw;
+        margin-top: 120px;
     }
 
     .descri-attraction{
-        width: 100%;
+        font-size: 25px;
     }
 }

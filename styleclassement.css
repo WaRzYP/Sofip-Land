@@ -153,8 +153,6 @@ main section{
         flex-direction: column;
     }
 
-
-
     .logodusite{
         order:-1;
         align-items: center;
@@ -163,12 +161,12 @@ main section{
 
 /* TEST JESSY */
 
-.class1-test{
-    height: 100px;
-}
+/* .class1-test{
+    height: 90px;
+}  */
 
 .joueur1-test{
-    width: 100px;
+    width: 80px;
 }
 
 .classements{
@@ -177,4 +175,20 @@ main section{
     margin-top: auto;    
 }
 
+}
+
+@media (max-width : 900px) {
+
+    .classements{
+        margin-top: 0;    
+    }
+
+    main{
+        height: 100vh;
+    }
+
+    .class1-test,.section-joueur-jessy{
+        height: 100px;
+    }
+    
 }

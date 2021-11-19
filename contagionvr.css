@@ -1,21 +1,38 @@
 body,html,p {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
+    /* overflow-x: hidden; */
+    /* -ms-overflow-style: none;  IE and Edge */
     scrollbar-width: none;  /* Firefox */
     -webkit-scrollbar: none; /* Chrome */
     font-family: 'Roboto', sans-serif; 
 }
 
+a{
+   
+    color: white;
+}
 
+a:hover{
+    transition:0.2s;
+    color: #bdbdbd;
+    
+}
 
+.space{
+    height: 100px;
+    width: 100%;
+    }
 p{
     color: white;
 
 }
 
 /* Header */
+
+header{
+    border-bottom: 1px solid black;
+}
 
 nav {
     display: flex;
@@ -35,18 +52,23 @@ nav {
 
 }
 
-hr{
-    top: 240px;
-    right: 0;
-    left: 0;
-    position: absolute;
+/* Body */ 
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/fond/Rectangle58.png");
+    height: 80vw;
 }
 
-/* Body */ 
+main section{
+    height: 500px;
+}
 
 .attraction{
     display: flex;
-    position: absolute;
+    position: relative;
     top: 35%;
     width: 20%;
     text-align: center;
@@ -55,30 +77,48 @@ hr{
 }
 
 .descri-attraction{
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 1000px;
-    text-align: center;
-    z-index: 999;
-    height: 900px;
-    align-items: center;
-    margin-left: 400px;
-    border-radius: 5vh;
+    width: 70%;
+    margin: auto;
     font-size: 36px;
 }
 
 .photo{
     display: flex;
-    position: absolute;
-    top: 130%;
-    margin-left:680px;
-    font-size: 34px;
+    justify-content: center;
 }
 
 .lien-youtube{
     display: flex;
-    position: absolute;
-    top: 140%;
-    margin-left: 650px;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width : 1050px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .logodusite{
+        order:-1;
+        align-items: center;
+    }
+
+    main{
+        height: 220vw;
+    }
+
+.lien-youtube{
+    display: flex;
+    }
 }

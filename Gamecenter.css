@@ -8,10 +8,7 @@ body,html,p {
     font-family: 'Roboto', sans-serif; 
 }
 
-.space{
-    height: 100px;
-    width: 100%;
-    }
+
 p{
     color: white;
 
@@ -55,22 +52,12 @@ main section{
     height: 500px;
 }
 
-.attraction{
-    display: flex;
-    position: absolute;
-    top: 35%;
-    width: 20%;
-    text-align: center;
-    z-index: 999;
-    margin-left: 720px;
-}
 
 .descri-attraction{
     width: 70%;
     margin: auto;
     font-size: 36px;
 }
-
 
 /* responsive */
 
@@ -91,6 +78,10 @@ main section{
     }
 
     main section{
-        height: 100vh;
+        height: 80vh;
+    }
+
+    .taille-logo{
+        height: 60vw;
     }
 }

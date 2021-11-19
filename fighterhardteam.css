@@ -1,23 +1,24 @@
 body,html,p {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
+    /* overflow-x: hidden; */
+    /* -ms-overflow-style: none;  IE and Edge */
     scrollbar-width: none;  /* Firefox */
     -webkit-scrollbar: none; /* Chrome */
     font-family: 'Roboto', sans-serif; 
 }
 
-a {
-    text-decoration: none;
-    color: rgb(28, 28, 28);
-}
 
 p{
     color: white;
+
 }
 
 /* Header */
+
+header{
+    border-bottom: 1px solid black;
+}
 
 nav {
     display: flex;
@@ -37,18 +38,22 @@ nav {
 
 }
 
-hr{
-    top: 240px;
-    right: 0;
-    left: 0;
-    position: absolute;
+/* Body */ 
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/fond/Rectangle58.png");
 }
 
-/* Body */ 
+main section{
+    height: 500px;
+}
 
 .attraction{
     display: flex;
-    position: absolute;
     top: 35%;
     width: 20%;
     text-align: center;
@@ -57,16 +62,35 @@ hr{
 }
 
 .descri-attraction{
-    display: flex;
-    top: 80%;
-    position: absolute;
-    width: 1300px;
-    text-align: center;
-    z-index: 999;
-    height: 800px;
-    align-items: center;
-    margin-left: 200px;
-    border-radius: 5vh;
-    font-size: 60px;
+    width: 70%;
+    margin: auto;
+    font-size: 36px;
 }
 
+
+/* responsive */
+
+@media screen and (max-width : 950px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .logodusite{
+        order:-1;
+        align-items: center;
+    }
+
+    main section{
+        height: 80vh;
+    }
+
+    .taille-logo{
+        height: 60vw;
+    }
+}
