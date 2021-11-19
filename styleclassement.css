@@ -48,12 +48,16 @@ main{
     align-items: center;
     flex-direction: column;
     background: url("img/fond/Rectangle58.png");
+    background-size: cover;
+    margin-top: 100px;
+    height: 100%;
 } 
 
 main section{
-    height: 39vh;
+    /* height: 39vh; */
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .titre{
@@ -88,283 +92,89 @@ main section{
 
 /* classement 1 */
 
-.class1{
-    background-color: rgb(255, 255, 255);
+.content-joueur-data{
     display: flex;
-    top: 60%;
-    position: absolute;
-    width: 700px;
-    text-align: center;
-    z-index: 999;
-    height: 300px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-}
-
-.joueur1{
-    width: 150px;
-    z-index: 9999;
-    margin-right: 100px;
-    margin-left: 100px;
-    border-radius: 50vh;
+    justify-content: space-around;
+    flex: 1;
 }
 
 .Nb1{
-    position: absolute;
+    position: relative;
     z-index: 9999;
     font-size: 45px;
     margin-left: 5vh;
 }
 
-/* Classement 2 */
-
-.class2{
+.class1-test{
     background-color: rgb(243, 237, 237);
-    display: flex;
-    top: 110%;
-    position: absolute;
     width: 600px;
-    z-index: 999;
     height: 300px;
     align-items: center;
-    margin-right: 800px;
     border-radius: 100vh;
     border-style:ridge;
     border-color: black;
-}
-
-.joueur2{
-    width: 150px;
-    margin-left: 17vh;
-    border-radius: 50vh;
-}
-
-.Nb2{
-    position: absolute;
-    font-size: 45px;
-    margin-left: 8vh;
-}
-
-/* classement 3*/
-.class3{
-    background-color: rgb(247, 247, 247);
     display: flex;
-    top: 110%;
-    position: absolute;
-    width: 600px;
-    z-index: 999;
-    height: 300px;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 700px;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
 }
 
-.joueur3{
+.Nb1-test p{
+    font-size: 50px;
+    padding: 50px;
+}
+
+
+.joueur1-test{
     width: 150px;
-    margin-left: 18vh;
     border-radius: 50vh;
 }
 
-.Nb3{
-    position: absolute;
-    font-size: 45px;
-    margin-left: 8vh;
-
-}
-
-/* classement 4 */
-.class4{
-background-color: rgb(247, 247, 247);
-display: flex;
-top: 160%;
-position: absolute;
-width: 600px;
-text-align: center;
-z-index: 999;
-height: 200px;
-align-items: center;
-border-radius: 100vh;
-border-style:ridge;
-border-color: black;
-}
-
-.joueur4{
-    width: 100px;
-    margin-left: 18vh;
-    border-radius: 50vh;
-}
-
-.Nb4{
-    position: absolute;
-    font-size: 45px;
-    margin-left: 8vh;
-
-}
-
-/* classement 5 */
-.class5{
-    background-color: rgb(247, 247, 247);
+.content-joueur-data{
     display: flex;
-    top: 200%;
-    position: absolute;
-    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    flex: 1;
+}
+
+.content-joueur-data .content-image-test{
+    width: 150px;
     text-align: center;
-    z-index: 999;
-    height: 200px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-}
-.joueur5{
-    width: 100px;
-    margin-left: 18vh;
-    border-radius: 50vh;
+    margin: 0;
+    padding: 0;
 }
 
-.Nb5{
-    position: absolute;
-    font-size: 45px;
-    margin-left: 8vh;
+.pseudo-xp-test{
+    flex: 1;
 }
-
 
 @media screen and (max-width : 1900px){
     nav{
         flex-direction: column;
     }
 
-    nav ul{
-        width: 100%;
-        text-align: center;
-        padding-left: 0;
-    }
+
 
     .logodusite{
         order:-1;
         align-items: center;
     }
 
-    main section{
-        height: 26vh;
-    }
 
-.class1{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    z-index: 999;
+/* TEST JESSY */
+
+.class1-test{
     height: 100px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-    margin-top: 80vh;
 }
 
-
-.class2{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    z-index: 999;
-    height: 100px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-    margin-top: 100vh;
-    margin-left: 136vh;
-}
-
-.class3{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    z-index: 999;
-    height: 100px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-    margin-top: 120vh;
-    margin-right: 120vh;
-}
-
-.class4{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    z-index: 999;
-    height: 100px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-    margin-top: 140vh;
-}
-
-.class5{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-    z-index: 999;
-    height: 100px;
-    align-items: center;
-    border-radius: 100vh;
-    border-style:ridge;
-    border-color: black;
-    margin-top: 160vh;
-}
-
-
-/* -----------------------------   Joueurs  --------------------------------------   */
-
-.joueur1{
+.joueur1-test{
     width: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
-.joueur2{
-    width: 100px;
-    margin-left: 18vh;
-    border-radius: 50vh;
+.classements{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;    
 }
-
-.joueur3{
-    width: 100px;
-    margin-left: 18vh;
-    border-radius: 50vh;
-}
-
-
-
-
-
-
-
-
-
-
 
 }
