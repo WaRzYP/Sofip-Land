@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,96 +13,81 @@
 
 <body>
     <header>
+        <!-----Navigations----->
         <nav>
             <ul data-aos="fade-down" data-aos-duration="2000"> <a href="attractions.html">ATTRACTIONS</a></ul>
-            <ul data-aos="fade-down" data-aos-duration="2000">RESTAURANTS</ul>
-                <div data-aos="fade-down" data-aos-duration="3000"><a href="index.html"><img class="logo">
-                    <img class="logo" src="img/logo site/logo site.png"></a>
-                </div> 
-            <ul data-aos="fade-down" data-aos-duration="2000">CLASSEMENT</ul>
-            <ul data-aos="fade-down" data-aos-duration="2000">BILLETERIE</ul>
+            <ul data-aos="fade-down" data-aos-duration="2000"> <a href="restaurants.html">RESTAURANTS</ul></a>
+            <div class="logodusite" data-aos="fade-down" data-aos-duration="3000">
+                <a href="index.html">
+                    <img class="logo" src="img/logo site/logo site.png" alt="">
+                </a>
+            </div>
+            <ul data-aos="fade-down" data-aos-duration="2000"><a href="classement.html">CLASSEMENT</a></ul>
+            <ul data-aos="fade-down" data-aos-duration="2000" class="billet">BILLETERIE</ul>
         </nav>
-    
-    <hr>
+        <!---------------------->
     </header>
 
-        <!-- background  -->  
+    <!-- background  -->
 
-<main>
-    <div class="panneau">
-        <h2 id="test">Billeterie</h2>
-    </div>
-
-<!------------------------------- Tarifs ----------------------------------------->
-
-<!-------------------------- Tarif adulte ------------------------------->
-<article class="main"> 
-<section>
-        <div class="tarif-solo">
-            <div class="adulte">
-                <ul>
-                    <p> Tarif adulte </p>
-                    <p> 30€ </p>
-                        <li>
-                            <p class="complement"></p>Accès parking
-                        </li>
-                        <li>
-                            <p class="complement"></p>Accès au parc 
-                        </li>
-                </ul>
-            </div>
+    <main>
+        <div class="panneau">
+            <h2 id="test">Billeterie</h2>
         </div>
-    </section>
 
-<!------------------------ Tarif enfant ------------------------------->
-    <section>
-        <div class="tarif-enfant">
-            <div class="enfant">
-                <ul>
-                    <p>Tarif enfant</p>
-                    <p>15€</p>
-                    <li>
-                        <p class="complement-enfant"></p> Accès au parc
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>    
-    
-<!-------------------------------- Tarif famille -------------------------->
-    <section>
-        <div class="tarif-groupe">
-            <div class="groupe">
-                <ul>
-                    <p class="titre-tarif">Tarif famille</p>
-                    <p class="soustitre-tarif">À partir de 2 adultes et 2 enfants.
-                    (sous présentation de documents)</p>
-                        <li>
-                            <p class="complement-famille"></p>Accès au parc
-                        </li>
-                        <li>
-                            <p class="complement-famille"></p>Accès parking
-                        </li>
-                        <li>
-                            <p class="complement-famille"></p>Repas dans un de nos restaurants du parc
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </section>    
+        <!------------------------------- Tarifs ----------------------------------------->
+        <section class="tarifs">
+            <!-------------------------- Tarif adulte ------------------------------->
+            <div class="card1">
+                <p class="tarif1">Tarif adulte</p>
+                <p class="prix">30€</p>
 
-<!--------------------------------Tarif CE --------------------------------->    
-    <section>
-        <div class="tarif-CE">
-            <div class="CE">
-                <ul>
-                    <p class="titre-CE">Tarif CE</p>
-                    <p class="soustitre-CE">Nous contacter pour plus de renseignement</p>
-                </ul>
+                <div class="listacces">
+                    <p>Accès au Parc</p>
+                    <p>Accès au Parking</p>
+                </div>
+
             </div>
-        </div>
-    </section>    
-</article>
-</main>
+            <!------------------------ Tarif enfant ------------------------------->
+
+            <div class="card2">
+                <p class="tarif2">Tarif enfant</p>
+                <p class="prix">15€</p>
+
+                <div class="listacces">
+                    <p>Accès au Parc</p>
+                </div>
+
+            </div>
+            <!-------------------------------- Tarif famille -------------------------->
+
+            <div class="card3">
+                <p class="tarif3">Tarif famille</p>
+                <p class="prix">140€</p>
+
+                <div class="listacces">
+                    <p>Accès au Parc</p>
+                    <p>Accès au Parking</p>
+                    <p>Repas dans un restaurant du parc</p>
+                </div>
+            </div>
+            <!--------------------------------Tarif CE --------------------------------->
+            <div class="card4">
+                <p class="tarif4">Tarif C.E</p>
+                <div class="listacces">
+                    <p>Nous contacter pour plus de renseignement</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="mailto"="sofipland@gmail.com">
+                <p class="footertext">Sofipland@gmail.com</p>
+            </a>
+            <img class="logocard" src="img/svg/bi_credit-card.svg" alt="carte de crédit">
+            <p class="footertext">Copyright 2021</p>
+        </footer>
 </body>
+
 </html>

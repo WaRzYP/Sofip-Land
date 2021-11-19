@@ -1,11 +1,14 @@
-body,html,p {
+html,body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    -webkit-scrollbar: none; /* Chrome */
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+html,body:-webkit-scrollbar{
+    display: none;
 }
 
 a {
@@ -27,18 +30,16 @@ nav {
     font-size: 1.4em;
 }
 
+header{
+    border-bottom: 1px solid black;
+}
+
 .logo{
     display: flex;
     width: 300px;
 
 }
 
-hr{
-    top: 240px;
-    right: 0;
-    left: 0;
-    position: absolute;
-}
 
 .titre{
     display: flex;
@@ -53,7 +54,7 @@ hr{
 .panneau{
     text-align: center;
     position: relative;
-    margin-top: 8vh;
+    margin-top: 15vh;
 }
 
 
@@ -77,221 +78,150 @@ main{
     background: url("img/fond/Rectangle58.png");
 }
 
-main section{
-    height:  50vh;
-    display: flex;
-}
 
             /* Tarifs */
+            .tarifs{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 150px;
+                flex-wrap: wrap;
+                
+            }
+
+            .card1 {
+                background-color: white;
+                width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .tarif1{
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            .card2 {
+                background-color: white;
+                width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .tarif2{
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            .card3 {
+                background-color: white;
+                width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+            .tarif3{
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            .card4 {
+                background-color: white;
+                width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+
+            .tarif4{
+                font-size: 1.8em; 
+                font-weight: bold;
+            }
 
 
-/* Tarif adulte */
+            .prix {
+                font-size: 1.7em;
+            }
 
-.tarif-solo{
-    background-color: rgba(250, 250, 250, 0.925);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 500px;
-    z-index: 999;
-    height: 600px;
-    align-items: center;
-    border-radius: 5vh;
-    border-style:ridge;
-    border-color: black;
-    margin-left: 42vh;
-}
+            .listacces {
+             font-size: 1.2em;
+             margin-left:25px ;
+             margin-right:25px ;
+            }
 
-.adulte{
-    position: absolute;
-    z-index: 9999;
-    font-size: 80;
-    margin-bottom: 100px;
-    margin-left: 10vh;
-    text-align: center;
-    
-}
-.complement{
-    margin-top: 5vh;
-}
+            /* Footer */
 
-p{
-    font-size: 45px;
-}
+            footer{
+                margin-top: 25px;
+                border-bottom: solid 1px black;
+                border-top: solid 1px black;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+            }
 
-/* Tarif enfant */
+            .footertext{
+                margin-right:50px;
+                margin-left:50px;
+                font-size: 2em;
+                color: white;
+            }
 
-.tarif-enfant{
-    background-color: rgba(250, 250, 250, 0.925);
-    display: flex;
-    top: 60%;
-    position: absolute;
-    width: 500px;
-    text-align: center;
-    z-index: 999;
-    height: 600px;
-    align-items: center;
-    margin-left: 1100px;
-    border-radius: 5vh;
-    border-style:ridge;
-    border-color: black;
-}
-
-.enfant{
-    position: absolute;
-    z-index: 9999;
-    font-size: 80;
-    margin-bottom: 30%;
-    margin-left: 50px;
-    text-align: center;
-}
-
-.complement-enfant{
-    margin-top: 5vh;
-}
-
-    /* Tarif groupe */
-
-.titre-tarif{
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.soustitre-tarif{
-    font-size: 33px;
-    margin-bottom: 100px;
-}
-
-.tarif-groupe{
-    background-color: rgba(250, 250, 250, 0.925);
-    display: flex;
-    top: 140%;
-    position: absolute;
-    width: 500px;
-    text-align: center;
-    z-index: 999;
-    height: 600px;
-    align-items: center;
-    margin-left: 42vh;
-    border-radius: 5vh;
-    border-style:ridge;
-    border-color: black;
-}
-
-              /* Tarif CE */
-.tarif-CE{
-    background-color: rgba(250, 250, 250, 0.925);
-    display: flex;
-    top: 140%;
-    position: absolute;
-    width: 500px;
-    text-align: center;
-    z-index: 999;
-    height: 600px;
-    align-items: center;
-    margin-left: 1100px;
-    border-radius: 5vh;
-    border-style:ridge;
-    border-color: black;
-}
-
-.titre-CE{
-    font-size: 50px;
-    margin-bottom: 100px;
-}
-
-.soustitre-CE{
-    font-size: 33px;
-    margin-bottom: 100px;
-}
-
-
+            .logocard {
+                width: 70px;
+                color: white;
+            }
 /* ------------------  RESPONSIVE --------------------- */
 
-@media screen and (max-width : 1900px){
+@media screen and (max-width:1336px) {
+
+    /* Barre de navigation */
+
     nav{
         flex-direction: column;
-    }
-
-    nav ul{
-        width: 100%;
-        text-align: center;
-        padding-left: 0;
-    }
-
+     }
+     nav ul{
+         width: 100%;
+         text-align: center;
+         padding-left: 0;
+     }
+ 
     .logodusite{
-        order:-1;
-        align-items: center;
+        order: -1;
+        width: 300px
+    }
+ 
+    .logo{
+     width:100%;
+     
     }
 
-    main section{
-        height: 50vh;
-        display: flex;
-        align-items: center;
-    }
+    /* Footer */
 
-    .main{
-        display: flex;
-        flex-direction: column;
-    }
-    .tarif-solo{
-        background-color: rgba(250, 250, 250, 0.925);
-        display: flex;
-        top: 60%;
-        position: absolute;
-        width: 500px;
-        z-index: 999;
-        height: 400px;
-        align-items: center;
-        border-radius: 5vh;
-        border-style:ridge;
-        border-color: black;
-        margin-left: 42vh;
-        margin-top: 50vh;
-    }
+footer {
+    font-size: 5px
+}
 
-    .tarif-enfant{
-        background-color: rgba(250, 250, 250, 0.925);
-        display: flex;
-        top: 60%;
-        position: absolute;
-        width: 500px;
-        z-index: 999;
-        height: 400px;
-        align-items: center;
-        border-radius: 5vh;
-        border-style:ridge;
-        border-color: black;
-        margin-top: 50vh;
-    }
+.logocard {
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+}
 
-    .tarif-groupe{
-        background-color: rgba(250, 250, 250, 0.925);
-        display: flex;
-        top: 60%;
-        position: absolute;
-        width: 500px;
-        z-index: 999;
-        height: 400px;
-        align-items: center;
-        border-radius: 5vh;
-        border-style:ridge;
-        border-color: black;
-        margin-left: 42vh;
-        margin-top: 100vh;
-    }
-.tarif-CE{
-        background-color: rgba(250, 250, 250, 0.925);
-        display: flex;
-        top: 60%;
-        position: absolute;
-        width: 500px;
-        z-index: 999;
-        height: 400px;
-        align-items: center;
-        border-radius: 5vh;
-        border-style:ridge;
-        border-color: black;
-        margin-top: 100vh;
-    }
-}   
+.footertext {
+    width: 50px;
+    color: #404040;
+}
+
+}
