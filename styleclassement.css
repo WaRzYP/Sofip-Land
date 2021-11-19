@@ -42,12 +42,19 @@ hr{
 
 /*Background body */
 
-#background{
-    width: 100%;
-    top: 30%;
-    position: absolute;
-}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/fond/Rectangle58.png");
+} 
 
+main section{
+    height: 39vh;
+    display: flex;
+    justify-content: center;
+}
 
 .titre{
     display: flex;
@@ -59,15 +66,25 @@ hr{
     margin-left: 720px;
 }
 
-.crown{
-    display: flex;
-    width: 100px;
+.panneau{
     text-align: center;
-    margin-left: 850px;
-    margin-top: 160px;
-    z-index: 9999;
+    position: relative;
+    margin-top: 8vh;
 }
 
+
+.panneau h2 {
+    background-color:white;
+    border-radius: 20px;
+    width: 400px;
+    font-size: 3em;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(40,40,40,0.47);
+    transition: 1.0s;
+}
 
 /* classement 1 */
 
@@ -81,7 +98,6 @@ hr{
     z-index: 999;
     height: 300px;
     align-items: center;
-    margin-left: 600px;
     border-radius: 100vh;
     border-style:ridge;
     border-color: black;
@@ -97,10 +113,9 @@ hr{
 
 .Nb1{
     position: absolute;
-    margin-left: 500px;
-    margin-top: 200px;
     z-index: 9999;
     font-size: 45px;
+    margin-left: 5vh;
 }
 
 /* Classement 2 */
@@ -114,7 +129,7 @@ hr{
     z-index: 999;
     height: 300px;
     align-items: center;
-    margin-left: 250px;
+    margin-right: 800px;
     border-radius: 100vh;
     border-style:ridge;
     border-color: black;
@@ -122,16 +137,14 @@ hr{
 
 .joueur2{
     width: 150px;
-    margin-right: 100px;
-    margin-left: 50px;
+    margin-left: 17vh;
     border-radius: 50vh;
 }
 
 .Nb2{
     position: absolute;
     font-size: 45px;
-    margin-top: 650px;
-    margin-left: 170px;
+    margin-left: 8vh;
 }
 
 /* classement 3*/
@@ -144,7 +157,7 @@ hr{
     z-index: 999;
     height: 300px;
     align-items: center;
-    margin-left: 1100px;
+    margin-left: 700px;
     border-radius: 100vh;
     border-style:ridge;
     border-color: black;
@@ -152,16 +165,14 @@ hr{
 
 .joueur3{
     width: 150px;
-    margin-right: 100px;
-    margin-left: 50px;
+    margin-left: 18vh;
     border-radius: 50vh;
 }
 
 .Nb3{
     position: absolute;
     font-size: 45px;
-    margin-top: 650px;
-    margin-left: 1040px;
+    margin-left: 8vh;
 
 }
 
@@ -176,7 +187,6 @@ text-align: center;
 z-index: 999;
 height: 200px;
 align-items: center;
-margin-left: 600px;
 border-radius: 100vh;
 border-style:ridge;
 border-color: black;
@@ -184,16 +194,14 @@ border-color: black;
 
 .joueur4{
     width: 100px;
-    margin-left: 70px;
-    margin-right: 100px;
+    margin-left: 18vh;
     border-radius: 50vh;
 }
 
 .Nb4{
     position: absolute;
     font-size: 45px;
-    margin-top: 1085px;
-    margin-left: 525px;
+    margin-left: 8vh;
 
 }
 
@@ -208,21 +216,155 @@ border-color: black;
     z-index: 999;
     height: 200px;
     align-items: center;
-    margin-left: 600px;
     border-radius: 100vh;
     border-style:ridge;
     border-color: black;
 }
 .joueur5{
     width: 100px;
-    margin-left: 70px;
-    margin-right: 100px;
+    margin-left: 18vh;
     border-radius: 50vh;
 }
 
 .Nb5{
     position: absolute;
     font-size: 45px;
-    margin-top: 1450px;
-    margin-left: 525px;
+    margin-left: 8vh;
+}
+
+
+@media screen and (max-width : 1900px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .logodusite{
+        order:-1;
+        align-items: center;
+    }
+
+    main section{
+        height: 26vh;
+    }
+
+.class1{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    align-items: center;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+    margin-top: 80vh;
+}
+
+
+.class2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    align-items: center;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+    margin-top: 100vh;
+    margin-left: 136vh;
+}
+
+.class3{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    align-items: center;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+    margin-top: 120vh;
+    margin-right: 120vh;
+}
+
+.class4{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    align-items: center;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+    margin-top: 140vh;
+}
+
+.class5{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 60%;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    align-items: center;
+    border-radius: 100vh;
+    border-style:ridge;
+    border-color: black;
+    margin-top: 160vh;
+}
+
+
+/* -----------------------------   Joueurs  --------------------------------------   */
+
+.joueur1{
+    width: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.joueur2{
+    width: 100px;
+    margin-left: 18vh;
+    border-radius: 50vh;
+}
+
+.joueur3{
+    width: 100px;
+    margin-left: 18vh;
+    border-radius: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
 }
