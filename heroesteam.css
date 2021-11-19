@@ -15,7 +15,11 @@ body,html,p {
 
 p{
     color: white;
+}
 
+a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
 }
 
 /* Header */
@@ -40,7 +44,6 @@ nav {
 .logo{
     display: flex;
     width: 300px;
-
 }
 
 /* Body */ 
@@ -72,6 +75,27 @@ main section{
     margin:auto;
     font-size: 36px;
 }
+
+/* Footer */
+
+footer{
+    margin-top: 25px;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footertext{
+    margin-right:50px;
+    margin-left:50px;
+    font-size: 2em;
+    color: #404040;
+}
+
 
 /* responsive */
 
@@ -111,4 +135,20 @@ main section{
         margin-top: 100px;
         height: 200px;
     }
+
+    /* Footer */
+
+footer {
+    font-size: 5px
+}
+
+.logocard {
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+}
+
+.footertext {
+    width: 50px;
+}
 }

@@ -8,12 +8,17 @@ body,html,p {
     font-family: 'Roboto', sans-serif; 
 }
 
-a{
+a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.photo a{
    
     color: white;
 }
 
-a:hover{
+.photo a:hover{
     transition:0.2s;
     color: #bdbdbd;
     
@@ -94,7 +99,23 @@ main section{
     margin-top:100px;
 }
 
+footer{
+    margin-top: 25px;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
 
+.footertext{
+    margin-right:50px;
+    margin-left:50px;
+    font-size: 2em;
+    color: #404040;
+}
 
 /* responsive */
 
@@ -121,4 +142,20 @@ main section{
 .lien-youtube{
     display: flex;
     }
+
+    /* Footer */
+
+footer {
+    font-size: 5px
+}
+
+.logocard {
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+}
+
+.footertext {
+    width: 50px;
+}
 }

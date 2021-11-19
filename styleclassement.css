@@ -148,6 +148,30 @@ main section{
     flex: 1;
 }
 
+/* Footer */
+
+footer{
+    margin-top: 25px;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footertext{
+    margin-right:50px;
+    margin-left:50px;
+    font-size: 2em;
+    color: #404040;
+}
+
+
+
+
+/*-----------------------Responsive ---------------------*/
 @media screen and (max-width : 1900px){
     nav{
         flex-direction: column;
@@ -190,5 +214,20 @@ main section{
     .class1-test,.section-joueur-jessy{
         height: 100px;
     }
+    /* Footer */
+
+footer {
+    font-size: 5px
+}
+
+.logocard {
+    width: 20px;
+    height: 20px;
+    margin-left: 35px;
+}
+
+.footertext {
+    width: 50px;
+}
     
 }
