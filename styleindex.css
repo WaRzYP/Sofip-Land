@@ -2,7 +2,11 @@ html,body {
     margin: 0;
     padding: 0;
     background: url(img/accueil.png);
+    background: url(img/fond/fd.png);
     background-size: cover;
+    background-color: #EEEEEE;
+    background-position-x: -17px;
+    background-position-y: 47px;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -12,7 +16,7 @@ html,body {
 
 ul a {
     text-decoration: none;
-    color: white;
+    color: rgb(28, 28, 28);
 }
 
 ul a:hover {
@@ -36,7 +40,7 @@ nav {
 }
 
 .button {
-    --c: white;
+    --c: rgb(28, 28, 28);
     color: var(--c);
     font-size: 16px;
     border: 0.3em solid var(--c);
@@ -71,7 +75,7 @@ nav {
 }
 
 .button:hover {
-    color: black;
+    color: rgb(212, 212, 212);
 }
 
 .button:hover span {
@@ -93,3 +97,39 @@ nav {
 .button span:nth-child(4) {
     --n: 4;
 }
+
+@media screen and (max-width:1336px) {
+
+    body,html {
+    background-position-x: 50%;
+
+    }
+
+    nav{
+        flex-direction: column;
+     }
+     nav ul{
+         width: 50%;
+         text-align: center;
+         padding-left: 0;
+         background-color: white;
+         border-radius: 15px;
+         padding: 15px;
+         border:  black;
+     }
+ 
+    .logodusite{
+        order: -1;
+        width: 300px
+    }
+ 
+    .logo{
+     width:100%;
+     
+    }
+
+    .button {
+        display: none;
+    }
+
+    }
