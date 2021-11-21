@@ -49,6 +49,7 @@ main{
     align-items: center;
     flex-direction: column;
     background: url("img/fond/Rectangle58.png");
+    background-size: cover;
 }
 
 main section{
@@ -86,7 +87,7 @@ footer{
 
 /* responsive */
 
-@media screen and (max-width : 950px){
+@media screen and (max-width : 1050px){
     nav{
         flex-direction: column;
     }
@@ -126,6 +127,22 @@ footer{
     .footertext {
         width: 50px;
     }
+}
 
+@media screen and (max-width : 500px){
+
+.attraction{
+    height: 170px;
+    margin-top: -5vh;
+}
+
+.descri-attraction{
+    font-size: 20px;
+
+}
+
+main{
+    height: 90vh;
+}
 
 }

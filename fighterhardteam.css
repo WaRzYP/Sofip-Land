@@ -93,7 +93,8 @@ footer{
 
 /* responsive */
 
-@media screen and (max-width : 950px){
+
+@media screen and (max-width : 1025px){
     nav{
         flex-direction: column;
     }
@@ -114,13 +115,14 @@ footer{
     }
 
     .taille-logo{
-        height: 60vw;
+        height: 50vw;
+    margin-top: 100px;  
     }
 
-    /* Footer */
+/* Footer */
 
     footer {
-        font-size: 5px
+        font-size: 5px;
     }
 
     .logocard {
@@ -131,5 +133,34 @@ footer{
 
     .footertext {
         width: 50px;
+    }
+}
+
+@media screen and (max-width : 500px){
+
+    .taille-logo{
+        height: 10px;
+    }
+
+    .attraction{
+        height: 170px;
+    }
+
+    .descri-attraction{
+        margin-top: 55vh;
+        font-size: 15px;
+    }
+
+    .image{
+        height: 200px;
+        z-index: 9999;
+    }
+
+    main{
+        height: 70vh;
+    }
+
+    .main-content{
+        margin-top: -20vh;
     }
 }

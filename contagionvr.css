@@ -64,7 +64,7 @@ main{
     align-items: center;
     flex-direction: column;
     background: url("img/fond/Rectangle58.png");
-    height: 80vw;
+    height: 100vw;
 }
 
 main section{
@@ -119,6 +119,7 @@ footer{
 
 /* responsive */
 
+
 @media screen and (max-width : 1050px){
     nav{
         flex-direction: column;
@@ -136,26 +137,124 @@ footer{
     }
 
     main{
-        height: 220vw;
+        height: 130vh;
     }
 
-.lien-youtube{
-    display: flex;
+    .image{
+        margin-top: 5vh;
     }
 
-    /* Footer */
+    .lien-youtube{
+        display: flex;
+        }
 
-footer {
-    font-size: 5px
+    .descri-attraction {
+        font-size: 25px;
+    }
+
+    footer {
+        font-size: 5px
+    }
+
+    .logocard {
+        width: 20px;
+        height: 20px;
+        margin-left: 35px;
+    }
+
+    .footertext {
+        width: 50px;
+    }
+
 }
 
-.logocard {
-    width: 20px;
-    height: 20px;
-    margin-left: 35px;
+@media screen and (max-width : 500px){
+
+    .image{
+        margin-top: 10vh;
+        height: 200px;
+
+    }
+    
+    .descri-attraction{
+    
+        font-size: 18px;
+    }
+    
+    main{
+        height: 170vh;
+    }
+
+    .photo{
+        margin-top: 50px;
+    }
+
+    .lien-youtube iframe{
+        width: 300px;
+        height: 300px;
+    }
+    
 }
 
-.footertext {
-    width: 50px;
+@media screen and (min-width: 501px) and (max-width : 800px){
+    .image{
+        height: 200px;
+        margin-top: 20vh;
+    }
+    
+    .descri-attraction{
+        font-size: 18px;
+    }
+    
+    main{
+        height: 140vh;
+        width: 800px;
+       
+    }
+
+    .photo{
+        margin-top: 50px;
+    }
+
+    .lien-youtube{
+        display: flex;
+        width: 500px;
+        height: 50px;
+        margin:auto;
+        margin-top: 20vh;
+        
+    }
+
+    footer{
+        width: 800px;
+    }
+    
+    header{
+        width: 800px;
+    }
 }
-}
+
+@media screen and (max-width: 320px){
+
+    .image{
+        height: 150px;
+    }
+    
+    main{
+        margin: 0;
+        height: 170vh;
+    }
+
+    .lien-youtube iframe{
+        width: 300px;
+        height: 300px;
+    } 
+
+    .footertext{
+        margin: 0;
+    }
+
+    .main-content{
+        margin:0;
+    }
+}     

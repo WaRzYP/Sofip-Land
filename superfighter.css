@@ -45,12 +45,17 @@ nav {
 
 /* Body */ 
 
+.attraction{
+    margin-top: 10vh;
+}
+
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: url("img/fond/Rectangle58.png");
+    background-size: cover;
 }
 
 main section{
@@ -86,7 +91,7 @@ footer{
 
 /* responsive */
 
-@media screen and (max-width : 950px){
+@media screen and (max-width : 1050px){
     nav{
         flex-direction: column;
     }
@@ -108,22 +113,40 @@ footer{
 
     .taille-logo{
         height: 50vw;
-        margin-top: 150px;
+    margin-top: 100px;  
     }
 
-    /* Footer */
+/* Footer */
 
-footer {
-    font-size: 5px
+    footer {
+        font-size: 5px
+    }
+
+    .logocard {
+        width: 20px;
+        height: 20px;
+        margin-left: 35px;
+    }
+
+    .footertext {
+        width: 50px;
+    }
 }
 
-.logocard {
-    width: 20px;
-    height: 20px;
-    margin-left: 35px;
+@media screen and (max-width : 500px){
+
+.attraction{
+    height: 150px;
+    margin-top: -5vh;
 }
 
-.footertext {
-    width: 50px;
+.descri-attraction{
+    font-size: 20px;
+
 }
+
+main{
+    height: 90vh;
+}
+
 }
